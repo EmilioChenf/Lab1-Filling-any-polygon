@@ -147,9 +147,9 @@ const SCENE_RENDERERS: [fn() -> Framebuffer; 5] = [
 ];
 
 fn main() -> io::Result<()> {
-    let framebuffer = SCENE_RENDERERS[0]();
+    let framebuffer = SCENE_RENDERERS[4]();
     write_bmp("out.bmp", &framebuffer)?;
-    println!("Imagen generada: out.bmp ({WIDTH}x{HEIGHT}) - Poligon-1");
+    println!("Imagen generada: out.bmp ({WIDTH}x{HEIGHT}) - todos los poligonos");
     Ok(())
 }
 
